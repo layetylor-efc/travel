@@ -7,12 +7,25 @@
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;margin:0;color:#292522;min-height:100vh;background-image:linear-gradient(rgba(255,255,255,.58),rgba(255,255,255,.72)),url("https://szy.co.jp/assets/imgs/business/michaelresort/facility_mgc-nasu.jpg");background-size:cover;background-position:center center;background-repeat:no-repeat;background-attachment:fixed}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(245,239,232,.12));}main{position:relative;z-index:1}
 main{max-width:760px;margin:auto;padding:32px 18px}
-h1{font-size:32px;margin:0 0 8px}.card{display:block;margin-top:20px;padding:20px;border-radius:18px;background:#fff;border:1px solid #e5ddd7;box-shadow:0 8px 24px rgba(0,0,0,.07);color:inherit;text-decoration:none}
-.card strong{display:block;font-size:22px;margin-bottom:6px}.sub{color:#6f6862}
+.title-panel{position:relative;overflow:hidden;padding:24px 22px 22px;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.88),rgba(255,250,245,.72));border:1px solid rgba(255,255,255,.78);box-shadow:0 14px 36px rgba(47,34,28,.16);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.title-panel:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#8d6a50,#c6a66f,#6f8874)}
+.title-kicker{font-size:11px;font-weight:900;letter-spacing:.24em;color:#84694f;margin-bottom:6px}
+h1{font-size:clamp(42px,10vw,68px);line-height:.95;letter-spacing:.06em;margin:0;color:#3e3028;text-shadow:0 1px 0 rgba(255,255,255,.8)}
+.title-line{width:64px;height:3px;border-radius:999px;margin:14px 0 9px;background:linear-gradient(90deg,#8d6a50,#d2b67d)}
+.sub{margin:0;color:#6f6862;font-size:13px;font-weight:700;letter-spacing:.03em}
+.card{display:block;margin-top:20px;padding:20px;border-radius:18px;background:rgba(255,255,255,.94);border:1px solid rgba(229,221,215,.95);box-shadow:0 8px 24px rgba(0,0,0,.08);color:inherit;text-decoration:none;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.card strong{display:block;font-size:22px;margin-bottom:6px}
+.card span{color:#6f6862;font-size:14px}
+@media(max-width:560px){main{padding-top:22px}.title-panel{padding:20px 18px 18px;border-radius:20px}.card{padding:18px}}
 </style>
 </head>
 <body><main>
-<h1>travel</h1>
-<p class="sub">旅行プラン公開ページ</p>
+<section class="title-panel" aria-label="travel">
+  <div class="title-kicker">TRAVEL NOTE</div>
+  <h1>travel</h1>
+  <div class="title-line" aria-hidden="true"></div>
+  <p class="sub">旅行プラン公開ページ</p>
+</section>
 <a class="card" href="./nasu/"><strong>那須旅行 2026年10月4〜6日</strong><span>2泊3日｜旅程・候補・ルート</span></a>
 </main></body></html>
